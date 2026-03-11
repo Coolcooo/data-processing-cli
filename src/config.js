@@ -19,12 +19,13 @@ export const config = {
 			handler: up
 		},
 		"cd": {
-			arguments: {
-				"path": {
+			arguments: [
+				{
+					name: "path",
 					required: true,
 					type: String
 				}
-			},
+			],
 			handler: cd
 		},
 		"ls": {
@@ -32,113 +33,117 @@ export const config = {
 		},
 		"csv-to-json": {
 			options: {
-				"input": {
-					required: true,
-					type: String
-				},
-				"output": {
-					required: true,
-					type: String
+				required: {
+					"input": {
+						type: String
+					},
+					"output": {
+						type: String
+					}
 				}
 			},
 			handler: csvToJson
 		},
 		"json-to-csv": {
 			options: {
-				"input": {
-					required: true,
-					type: String
-				},
-				"output": {
-					required: true,
-					type: String
+				required: {
+					"input": {
+						type: String
+					},
+					"output": {
+						type: String
+					}
 				}
 			},
 			handler: jsonToCsv
 		},
 		"count": {
 			options: {
-				"input": {
-					required: true,
-					type: String
+				required: {
+					"input": {
+						type: String
+					}
 				}
 			},
 			handler: count
 		},
 		"hash": {
 			options: {
-				"input": {
-					required: true,
-					type: String
+				required: {
+					"input": {
+						type: String
+					},
 				},
-				"algorithm": {
-					type: String
-				},
-				"save": {
-					type: Boolean
+				optional: {
+					"algorithm": {
+						type: String
+					},
+					"save": {
+						type: Boolean
+					}
 				}
 			},
 			handler: hash
 		},
 		"hash-compare": {
 			options: {
-				"input": {
-					required: true,
-					type: String
+				required: {
+					"input": {
+						type: String
+					},
+					"hash": {
+						type: String
+					},
 				},
-				"hash": {
-					required: true,
-					type: String
-				},
-				"algorithm": {
-					type: String
+				optional: {
+					"algorithm": {
+						type: String
+					}
 				}
 			},
 			handler: hashCompare
 		},
 		"encrypt": {
 			options: {
-				"input": {
-					required: true,
-					type: String
-				},
-				"output": {
-					required: true,
-					type: String
-				},
-				"password": {
-					required: true,
-					type: String
+				required: {
+					"input": {
+						type: String
+					},
+					"output": {
+						type: String
+					},
+					"password": {
+						type: String
+					}
 				}
 			},
 			handler: encrypt
 		},
 		"decrypt": {
 			options: {
-				"input": {
-					required: true,
-					type: String
-				},
-				"output": {
-					required: true,
-					type: String
-				},
-				"password": {
-					required: true,
-					type: String
+				required: {
+					"input": {
+						type: String
+					},
+					"output": {
+						type: String
+					},
+					"password": {
+						type: String
+					}
 				}
 			},
 			handler: encrypt
 		},
 		"log-stats": {
 			options: {
-				"input": {
-					required: true,
-					type: String
-				},
-				"output": {
-					required: true,
-					type: String
+				required: {
+					"input": {
+						type: String
+					},
+					"output": {
+						type: String
+					}
 				}
 			}
 		},
