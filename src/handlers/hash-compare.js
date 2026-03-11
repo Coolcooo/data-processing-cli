@@ -1,3 +1,3 @@
-export const hashCompare = () => {
+export const hashCompare = async () => {
 
 };

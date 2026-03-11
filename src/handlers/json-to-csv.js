@@ -1,3 +1,3 @@
-export const jsonToCsv = () => {
+export const jsonToCsv = async () => {
 
 };

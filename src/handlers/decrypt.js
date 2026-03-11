@@ -1,3 +1,3 @@
-export const decrypt = () => {
+export const decrypt = async () => {
 
 };

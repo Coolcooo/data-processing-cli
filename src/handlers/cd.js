@@ -1,3 +1,3 @@
-export const cd = () => {
+export const cd = async () => {
 
 };

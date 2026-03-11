@@ -1,3 +1,3 @@
-export const encrypt = () => {
+export const encrypt = async () => {
 
 };

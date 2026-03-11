@@ -1,3 +1,3 @@
-export const count = () => {
+export const count = async () => {
 
 };

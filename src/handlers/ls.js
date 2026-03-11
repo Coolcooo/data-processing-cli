@@ -1,3 +1,3 @@
-export const ls = () => {
+export const ls = async () => {
 
 };
