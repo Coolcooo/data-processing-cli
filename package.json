@@ -1,0 +1,14 @@
+{
+	"name": "data-processing-cli",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "node src/main.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Coolcooo/data-processing-cli.git"
+	},
+	"private": true
+}
